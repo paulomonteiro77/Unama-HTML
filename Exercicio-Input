@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8">
+    <title>Tela de login</title>
+</head>
+<body>
+    <h1> style="color: navy; " Para entrar no sistema, digite seu login e sua senha nos campos a seguir</h1>
+    <table border="1" align="center"> 
+        <form action="/login" method="post">
+            </tr>
+            <tr>
+                <td><b>Login:</b></td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td><b>Senha:</b></td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Entrar"></td>
+            </tr>
+        </tr>
+        </form>
+    </table>    
+</body>
+</html>
+
