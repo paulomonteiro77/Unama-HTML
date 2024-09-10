@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select><br><br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label for="cargo">Cargo Pretendido:</label>
+            <input type="text" id="cargo" name="cargo" required><br><br>
+
+            <label for="tecnologias">Tecnologias de Interesse:</label><br>
+            <input type="checkbox" id="java" name="tecnologias" value="Java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="html" name="tecnologias" value="HTML">
+            <label for="html">HTML, CSS</label><br>
+            <input type="checkbox" id="javascript" name="tecnologias" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="checkbox" id="sql" name="tecnologias" value="SQL">
+            <label for="sql">SQL</label><br><br>
+
+            <label for="curriculo">Mini Currículo:</label><br>
+            <textarea id="curriculo" name="curriculo" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
