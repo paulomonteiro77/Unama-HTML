@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="/submit" method="post">
+        <fieldset id="azul" >
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input id="fund" type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input id="fund" type="email" id="email" name="email" required><br><br>
+
+            <label for="cidade">Cidade:</label>
+            <input id="fund" type="text" id="cidade" name="cidade" required><br><br>
+            <label for="estado">Estado:</label>
+
+            <select id="fund" id="estado" name="estado">
+                <option value="Escolha" </option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select> <br><br>
+
+            
+        </fieldset>
+
+        <fieldset id="red">
+            <legend><b>Cargo pretendido</b></legend>
+            <input type="checkbox" id="analistaSistemas" name="cargo" value="analista de Sistemas"> <label for="analistaSistemas">Analista de sistemas</label>
+            <input type="checkbox" id="analistabanco" name="cargo" value="analista de banco"> <label for="analista banco">Analista de Banco de dados</label>
+            <input type="checkbox" id="analistasuporte" name="cargo" value="analista de suporte"> <label for="analista banco">Analista de suporte</label><br><br>
+
+            <legend><b>Tecnologias de Interesse</b></legend>
+            <input type="checkbox" id="java" name="cargo" value="java"> <label for="java">Java</label>
+            <input type="checkbox" id="html" name="cargo" value="html"> <label for="html">HTML</label>
+            <input type="checkbox" id="JavaScript" name="cargo" value="JavaScript"> <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" id="SQL" name="cargo" value="SQL"> <label for="SQL">SQL</label><br><br>
+
+            <label for="curriculo"><b>Mini Currículo:</b></label><br>
+            <textarea id="curriculo" name="curriculo" rows="4" cols="50" required></textarea>
+
+        </fieldset>
+        <br><br>
+
+        <fieldset id="verde">
+            <legend><b>Ações</b></legend>
+        <button id="enviar" type="submit">Enviar</button>
+        <button id="limpar" type="reset">Limpar</button>
+    </fieldset>
+    </form>
+</body>
+</html>
