@@ -1,0 +1,33 @@
+body h1{
+    text-align: center
+}
+ #azul {
+ background-color: blue;
+}
+
+#red {
+    background-color:firebrick   ;
+}
+
+#verde {
+    background-color: yellowgreen;
+}
+
+#fund {
+    background-color: yellow;
+}
+
+#curriculo {
+    background-color: yellow;
+}
+
+#enviar{
+    background-color: aqua;
+    text-align: center;
+
+}
+
+#limpar{
+    background-color: chocolate;
+    text-align: center;
+}
